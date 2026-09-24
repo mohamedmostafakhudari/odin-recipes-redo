@@ -1,0 +1,31 @@
+.image-container {
+  width: 600px;
+  height: 600px;
+}
+.image-container > img, .image-container > a > img {
+  border-radius: 0.75rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero > .container > h1 {
+  margin-top: 2rem;
+}
+
+section > .container > :is(ul, ol) > li::marker {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.guide > .container > ol > li::marker {
+  content: "Step " counter(list-item) ": ";
+}
+
+.guide > .container > ol {
+  margin-left: 3rem;
+}
+
+.guide > .container > ol > li > ol {
+  padding: 0;
+}
